@@ -1,0 +1,26 @@
+{
+  "name": "commitlint-config",
+  "version": "1.0.0",
+  "description": "Git 规范",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "commit",
+    "lint"
+  ],
+  "homepage": "https://github.com/PosionEdgar/lint-space#readme",
+  "bugs": {
+    "url": "https://github.com/PosionEdgar/lint-space/issues"
+  },
+  "author": "PosionEdgar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PosionEdgar/lint-space.git"
+  },
+  "dependencies": {
+    "conventional-changelog-conventionalcommits": "^4.5.0"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "markdownlint-config",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.json",
+  "keywords": [
+    "markdown",
+    "lint"
+  ],
+  "homepage": "https://github.com/PosionEdgar/lint-space#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PosionEdgar/lint-space.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PosionEdgar/lint-space/issues"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "markdownlint": "^0.28.1"
+  }
+}
