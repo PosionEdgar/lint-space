@@ -17,3 +17,8 @@ node_modules/
 
 .cache/
 out/
+
+.vu*press*/**/config.bundled_*.mjs
+**/config.bundled_*.mjs
+.vuepress/.temp/
+.vuepress/.cache/
