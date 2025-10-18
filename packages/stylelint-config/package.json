@@ -1,0 +1,33 @@
+{
+  "name": "stylelint-config",
+  "version": "1.0.0",
+  "description": "Css 规范",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "stylelint",
+    "lint"
+  ],
+  "author": "PosionEdgar",
+  "homepage": "https://github.com/PosionEdgar/stylelint-config",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PosionEdgar/stylelint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PosionEdgar/stylelint-config.git"
+  },
+  "peerDependencies": {
+    "stylelint": ">=8.3.0",
+    "stylelint-scss": ">=2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "stylelint": "^14.3.0",
+    "stylelint-scss": "^4.1.0"
+  }
+}
