@@ -1,5 +1,5 @@
 {
-  "name": "markdownlint-config",
+  "name": "pe-markdownlint-config",
   "version": "0.0.1",
   "description": "",
   "main": "index.json",
@@ -19,5 +19,6 @@
   "license": "ISC",
   "peerDependencies": {
     "markdownlint": "^0.28.1"
-  }
+  },
+  "gitHead": "3a30cf044940631d58ceee618cb592e5683b996f"
 }
