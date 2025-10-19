@@ -1,6 +1,6 @@
 {
-  "name": "commitlint-config",
-  "version": "1.0.0",
+  "name": "pe-commitlint-config",
+  "version": "0.0.2",
   "description": "Git 规范",
   "main": "index.js",
   "keywords": [
@@ -19,5 +19,6 @@
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^4.5.0"
-  }
+  },
+  "gitHead": "3a30cf044940631d58ceee618cb592e5683b996f"
 }
