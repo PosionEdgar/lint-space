@@ -12,14 +12,14 @@
     "lint"
   ],
   "author": "PosionEdgar",
-  "homepage": "https://github.com/PosionEdgar/stylelint-config",
+  "homepage": "https://github.com/PosionEdgar/lint-space",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/PosionEdgar/stylelint-config/issues"
+    "url": "https://github.com/PosionEdgar/lint-space/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PosionEdgar/stylelint-config.git"
+    "url": "git+https://github.com/PosionEdgar/lint-space.git"
   },
   "peerDependencies": {
     "stylelint": ">=8.3.0",
