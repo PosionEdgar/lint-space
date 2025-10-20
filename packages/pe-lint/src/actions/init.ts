@@ -86,23 +86,23 @@ export default async (options: InitOptions) => {
 
     // 初始化 `enableStylelint`
     if (typeof options.enableStylelint === 'boolean') {
-        options.enableStylelint = options.enableStylelint
+        config.enableStylelint = options.enableStylelint
     } else {
-        options.enableStylelint = await chooseEnableStylelint(!/node/.test(config.eslintType))
+        config.enableStylelint = await chooseEnableStylelint(!/node/.test(config.eslintType))
     }
 
     // 初始化 `enableMarkdownlint`
     if (typeof options.enableMarkdownlint === 'boolean') {
-        options.enableMarkdownlint = options.enableMarkdownlint
+        config.enableMarkdownlint = options.enableMarkdownlint
     } else {
-        options.enableMarkdownlint = await chooseEnableMarkdownLint()
+        config.enableMarkdownlint = await chooseEnableMarkdownLint()
     }
 
-    // 初始化 `enablePrettier`
+      // 初始化 `enablePrettier`
     if (typeof options.enablePrettier === 'boolean') {
-        options.enablePrettier = options.enableMarkdownlint;
+        config.enablePrettier = options.enablePrettier;
     } else {
-        options.enablePrettier = await chooseEnablePrettier()
+        config.enablePrettier = await chooseEnablePrettier();
     }
 
     if (!isTest) {

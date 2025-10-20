@@ -23,7 +23,7 @@ const mergeVSCodeConfig = (filepath: string, content: string) => {
         const targetData = fs.readJSONSync(filepath);
         const sourceData = JSON.parse(content);
         return JSON.stringify(
-            _.mergeWith(targetData. sourceData, (target, source) => {
+            _.mergeWith(targetData, sourceData, (target, source) => {
                 if (Array.isArray(target) && Array.isArray(source)) {
                     return [...new Set(source.concat(target))]
                 }
