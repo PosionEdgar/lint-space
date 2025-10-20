@@ -30,5 +30,5 @@ export async function doStylelint(options: DoStylintOptions) {
         files
     })
 
-    return formatStylelintResults(data.results, options.files)
+    return formatStylelintResults(data.results, options.quiet)
 }

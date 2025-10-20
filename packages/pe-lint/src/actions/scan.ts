@@ -1,6 +1,6 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { doPrettier } from '../lints'
+import { doEslint, doPrettier, doStylelint, doMarkdownlint } from '../lints'
 
 import { Config, PKG, ScanOptions, ScanReport, ScanResult } from "../types";
 import { PKG_NAME } from '../utils/constants';

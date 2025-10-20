@@ -5,15 +5,15 @@ import path from "path";
 import { STYLELINT_IGNORE_PATTERN } from "../../utils/constants";
 import fs from "fs-extra";
 
-export async function getStylelintConfig(opts: ScanOptions, pkg: PKG, config: Config): LinterOptions {
+export function getStylelintConfig(opts: ScanOptions, pkg: PKG, config: Config): LinterOptions {
     const { cwd, fix } = opts;
 
     if (config.enableStylelint === false) return {} as any;
 
     const lintConfig: any = {
         fix: Boolean(fix),
-        allowEmptyInput: true
-    }
+        allowEmptyInput: true,
+    };
 
     if (config.stylelintOptions) {
         // 若用户传入了 stylelintOptions，则用用户的
@@ -30,7 +30,7 @@ export async function getStylelintConfig(opts: ScanOptions, pkg: PKG, config: Co
         // 根据扫描目录下有无lintignore文件，若无则使用默认的 ignore 配置
         const ignoreFilePath = path.resolve(cwd, '.stylelintignore');
         if (!fs.existsSync(ignoreFilePath)) {
-            lintConfig.ignoreFilePath = STYLELINT_IGNORE_PATTERN
+            lintConfig.ignorePattern = STYLELINT_IGNORE_PATTERN
         }
     }
 
