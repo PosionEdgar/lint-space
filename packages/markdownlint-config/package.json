@@ -1,6 +1,6 @@
 {
   "name": "pe-markdownlint-config",
-  "version": "0.0.9",
+  "version": "0.0.8",
   "main": "index.json",
   "description": "文档规范",
   "keywords": [
