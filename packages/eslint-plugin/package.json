@@ -18,13 +18,13 @@
   "main": "src/index.js",
   "author": "PoisonEdgar",
   "license": "ISC",
-  "homepage": "https://github.com/PoisonEdgar/encode-fe-eslint-plugin",
+  "homepage": "https://github.com/PoisonEdgar/pe-eslint-plugin",
   "bugs": {
-    "url": "https://github.com/PoisonEdgar/encode-fe-eslint-plugin/issues"
+    "url": "https://github.com/PoisonEdgar/pe-eslint-plugin/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PoisonEdgar/encode-fe-eslint-plugin.git"
+    "url": "git+https://github.com/PoisonEdgar/pe-eslint-plugin.git"
   },
   "dependencies": {
     "fs-extra": "^9.0.1",
