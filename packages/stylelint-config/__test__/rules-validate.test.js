@@ -14,7 +14,7 @@ describe('test/rule-validate.test.js', () => {
             const filesResult = result.results || [];
             filesResult.forEach((fileResult) => {
                 console.log(`====================${filePath}====================`)
-                console.log('fileResult ---->', fileResult.warnings);
+
             });
 
             assert.ok(filesResult.length !== 0);
