@@ -1,5 +1,5 @@
 import chalk from 'chalk';
-import { PKG_NAME, UNICONDE } from './constants';
+import { PKG_NAME, UNICODE } from './constants';
 
 const { green, blue, yellow, red } = chalk;
 
@@ -19,7 +19,7 @@ export default {
     result(text: string, pass: boolean) {
         console.info(
             blue(`[${PKG_NAME}] ${text}`),
-            pass ? green(UNICONDE.success) : red(UNICONDE.failure)
+            pass ? green(UNICODE.success) : red(UNICODE.failure)
         )
     }
 }

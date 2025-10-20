@@ -1,6 +1,6 @@
 {
   "name": "web-pe-lint",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "前端编码规范工程化脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -73,10 +73,10 @@
     "markdownlint": "^0.25.1",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
-    "pe-commitlint-config": "workspace:^",
-    "pe-eslint-config": "workspace:^",
-    "pe-markdownlint-config": "workspace:^",
-    "pe-stylelint-config": "workspace:^",
+    "pe-commitlint-config": "^0.0.4",
+    "pe-eslint-config": "^0.0.4",
+    "pe-markdownlint-config": "^0.0.4",
+    "pe-stylelint-config": "^0.0.4",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
@@ -94,5 +94,6 @@
   },
   "bugs": {
     "url": "https://github.com/PosionEdgar/lint-space/issues"
-  }
+  },
+  "gitHead": "83c9ada71c7fac6a0174b6d28234df9c19bd5231"
 }

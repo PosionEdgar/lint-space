@@ -1,4 +1,4 @@
-import { initAction } from './actions/init';
+import initAction from './actions/init';
 import { InitOptions } from './types';
 
 type IInitOptions = Omit<InitOptions, 'checkVersionUpdate'>
