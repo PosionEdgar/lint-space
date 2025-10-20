@@ -67,7 +67,7 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
     );
     const willRemovePackage = dependencies.filter((name) => {
         packageNamesToRemove.includes(name) ||
-        packagePrefixesToRemove.some((prefix) => name.startWith(prefix))
+        packagePrefixesToRemove.some((prefix) => name.startsWith(prefix))
     });
 
     const uselessConfig = checkuselessConfig(cwd);
