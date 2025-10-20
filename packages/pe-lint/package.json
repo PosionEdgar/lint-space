@@ -76,7 +76,7 @@
     "pe-commitlint-config": "^0.0.4",
     "pe-eslint-config": "^0.0.4",
     "pe-markdownlint-config": "^0.0.4",
-    "pe-stylelint-config": "^0.0.4",
+    "pe-stylelint-config": "^0.0.5",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
