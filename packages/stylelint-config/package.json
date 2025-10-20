@@ -1,6 +1,6 @@
 {
   "name": "pe-stylelint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Css 规范",
   "main": "index.js",
   "type": "module",

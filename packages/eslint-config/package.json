@@ -1,6 +1,6 @@
 {
   "name": "pe-eslint-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "JavaScript 代码规范",
   "main": "index.js",
   "scripts": {
