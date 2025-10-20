@@ -1,6 +1,6 @@
 {
   "name": "web-pe-lint",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "前端编码规范工程化脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -76,7 +76,7 @@
     "pe-commitlint-config": "^0.0.4",
     "pe-eslint-config": "^0.0.4",
     "pe-markdownlint-config": "^0.0.4",
-    "pe-stylelint-config": "^0.0.7",
+    "pe-stylelint-config": "^0.0.8",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
