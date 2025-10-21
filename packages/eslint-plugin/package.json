@@ -1,6 +1,6 @@
 {
   "name": "pe-eslint-plugin",
-  "version": "1.0.3",
+  "version": "1.0.19",
   "description": "自定义eslint插件",
   "scripts": {
     "test": "jest",
