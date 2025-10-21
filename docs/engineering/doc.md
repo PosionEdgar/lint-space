@@ -4,16 +4,13 @@ categories:
   - 工程规范
 tags:
   - 工程规范
-author:
-  name: 澄怀
-  link: https://github.com/encode-studio-fe/fe-spec
 ---
 
 # 文档 规范
 
 ## 前言
 
-在撰写文档的时候如果能遵循一点良好的规约，将能**提升所有人的阅读体验**。
+在撰写文档的时候如果能遵循一点良好的规范，将能**提升所有人的阅读体验**。
 
 在此，文档的含义非常广泛，可以指代任何供人类阅读的文本材料。包括但不限于：`Readme`、`Changelog`、代码注释、上手指南、`Issue` 说明和`PPT` 分享等。
 
