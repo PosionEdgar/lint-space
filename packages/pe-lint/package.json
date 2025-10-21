@@ -1,7 +1,7 @@
 {
   "name": "web-pe-lint",
-  "version": "1.0.9",
-  "description": "前端编码规范工程化脚手架",
+  "version": "1.0.5",
+  "description": "印客教育前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -52,6 +52,10 @@
     "commander": "^6.2.1",
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
+    "pe-commitlint-config": "^1.0.3",
+    "pe-eslint-config": "^1.0.4",
+    "pe-markdownlint-config": "^1.0.3",
+    "pe-stylelint-config": "^1.0.3",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -71,13 +75,8 @@
     "is-docker": "^2.1.1",
     "lodash": "^4.17.20",
     "markdownlint": "^0.25.1",
-    "markdownlint-config-encode": "^1.0.8",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
-    "pe-commitlint-config": "^1.0.3",
-    "pe-eslint-config": "^1.0.4",
-    "pe-markdownlint-config": "^1.0.3",
-    "pe-stylelint-config": "^1.0.3",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
@@ -86,15 +85,14 @@
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
   },
-  "author": "PoisonEdgar",
-  "homepage": "https://github.com/PosionEdgar/lint-space#readme",
+  "author": "chenghuai",
+  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PosionEdgar/lint-space.git"
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
   },
   "bugs": {
-    "url": "https://github.com/PosionEdgar/lint-space/issues"
-  },
-  "gitHead": "bef236d882bb62cda0b74b1dd48f20ccc71a96b5"
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+  }
 }
