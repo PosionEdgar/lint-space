@@ -7,7 +7,9 @@ import { getESLintConfig } from './getESLintConfig';
 
 
 // 👇 强制从当前包解析 ESLint，防止引用到错误版本
-const { ESLint } = require(require.resolve('eslint', { paths: [__dirname] }));
+const eslintModule = require(require.resolve('eslint', { paths: [__dirname] }));
+const ESLint = eslintModule.ESLint || eslintModule.default?.ESLint || eslintModule.default;
+
 export interface DoESLintOptions extends ScanOptions {
   pkg: PKG;
   config?: Config;
