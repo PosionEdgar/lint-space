@@ -1,46 +1,45 @@
+import markdownlint from 'markdownlint';
+import type { ScanResult } from '../../types';
 
 /**
  * 格式化 markdownlint 输出结果
  */
-
-import markdownlint from "markdownlint";
-import type { ScanResult } from "../../types";
-
 export function formatMarkdownlintResults(
-    results: markdownlint.LintResults,
-    quiet: boolean
+  results: markdownlint.LintResults,
+  quiet: boolean,
 ): ScanResult[] {
-    const parseResults = [];
-    for (const file in results) {
-        if (!Object.prototype.hasOwnProperty.call(results, file) || quiet) continue;
+  const parsedResults = [];
 
-        let warningCount = 0;
-        let fixableWarningCount = 0;
+  for (const file in results) {
+    if (!Object.prototype.hasOwnProperty.call(results, file) || quiet) continue;
 
-        const messages = results[file].map(({
-            lineNumber, ruleNames, ruleDescription, ruleInformation, errorRange, fixInfo
-        }) => {
-            if (fixInfo) fixableWarningCount ++
-            warningCount ++
+    let warningCount = 0;
+    let fixableWarningCount = 0;
+    const messages = results[file].map(
+      ({ lineNumber, ruleNames, ruleDescription, ruleInformation, errorRange, fixInfo }) => {
+        if (fixInfo) fixableWarningCount++;
+        warningCount++;
 
-            return {
-                line: lineNumber,
-                column: Array.isArray(errorRange) ? errorRange[0] : 1,
-                rule: ruleNames[0],
-                url: ruleInformation,
-                message: ruleDescription,
-                errored: false
-            }
-        })
+        return {
+          line: lineNumber,
+          column: Array.isArray(errorRange) ? errorRange[0] : 1,
+          rule: ruleNames[0],
+          url: ruleInformation,
+          message: ruleDescription,
+          errored: false,
+        };
+      },
+    );
 
-        parseResults.push({
-            filePath: file,
-            messages,
-            errorCount: 0,
-            warningCount,
-            fixableWarningCount,
-            fixableErrorCount: 0
-        })
-    }
-    return parseResults;
+    parsedResults.push({
+      filePath: file,
+      messages,
+      errorCount: 0,
+      warningCount,
+      fixableErrorCount: 0,
+      fixableWarningCount,
+    });
+  }
+
+  return parsedResults;
 }
