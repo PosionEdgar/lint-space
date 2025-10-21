@@ -11,18 +11,20 @@ function setErrorRulesToWarn(configPath) {
     if (Object.prototype.hasOwnProperty.call(rules, ruleName)) {
       const ruleValue = rules[ruleName];
       if (Array.isArray(ruleValue)) {
+        // 'array-bracket-spacing': [ 'error', 'never' ] 这种规则写法
         if (ruleValue[0] === 'error') {
           ruleValue[0] = 'warn';
         }
       } else if (ruleValue === 'error') {
+        // 'new-parens': 'error' 这种规则写法
         rules[ruleName] = 'warn';
       }
     }
   }
 
   return {
-    rules
-  }
+    rules,
+  };
 }
 
-module.exports = setErrorRulesToWarn("../../rules/base/style.js");
+module.exports = setErrorRulesToWarn('../../rules/base/style.js');
