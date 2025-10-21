@@ -1,8 +1,8 @@
 {
   "name": "pe-eslint-config",
-  "version": "1.0.14",
+  "version": "1.0.3",
   "main": "index.js",
-  "description": "JavaScript TypeScript Node 规范",
+  "description": "印客学院 JavaScript TypeScript Node 规范",
   "keywords": [
     "encode",
     "javaScript",
@@ -15,7 +15,16 @@
     "test": "mocha ./__tests__/*.test.js --timeout 5000",
     "print-config": "eslint --print-config ./index.js > ./print-config.json"
   },
+  "author": "chenghuai",
+  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@babel/eslint-parser": "^7.16.3",

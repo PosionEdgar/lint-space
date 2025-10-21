@@ -1,26 +1,19 @@
 {
   "name": "pe-stylelint-config",
   "version": "1.0.3",
-  "description": "Css 规范",
+  "description": "印客学院 CSS规范",
   "main": "index.js",
-  "type": "module",
+  "keywords": [
+    "encode",
+    "style",
+    "lint"
+  ],
   "scripts": {
     "test": "jest"
   },
-  "keywords": [
-    "stylelint",
-    "lint"
-  ],
-  "author": "PosionEdgar",
-  "homepage": "https://github.com/PosionEdgar/lint-space",
+  "author": "chenghuai",
+  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PosionEdgar/lint-space/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/PosionEdgar/lint-space.git"
-  },
   "peerDependencies": {
     "stylelint": ">=8.3.0",
     "stylelint-scss": ">=2.0.0"
@@ -30,5 +23,11 @@
     "stylelint": "^14.3.0",
     "stylelint-scss": "^4.1.0"
   },
-  "gitHead": "6bb9a23f7771e0012418784b1e7c8d1209737486"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+  }
 }
