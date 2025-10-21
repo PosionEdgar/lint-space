@@ -1,7 +1,7 @@
 import ora from 'ora';
 import scanAction from './actions/scan';
 import initAction from './actions/init';
-import { InitOptions, ScanOptions } from './types';
+import type { InitOptions, ScanOptions } from './types';
 import { PKG_NAME } from './utils/constants';
 import printReport from './utils/print-report';
 
@@ -22,7 +22,7 @@ export const scan = async (options: ScanOptions) => {
 
     const { results, errorCount, warningCount } = report;
 
-    let type = 'success';
+    let type = 'succeed';
 
     if (errorCount > 0) {
         type = 'fail';
@@ -30,9 +30,9 @@ export const scan = async (options: ScanOptions) => {
         type = 'warn'
     }
 
-    checking.stop()
+    checking[type]();
+    
+    if (results.length > 0) printReport(results, false);
 
-    if (results.length > 0) printReport(results, false)
-
-    return report
+    return report;
 }

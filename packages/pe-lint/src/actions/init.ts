@@ -7,7 +7,7 @@ import npmType from "../utils/npm-type";
 import log from "../utils/log";
 import conflictResolve from '../utils/conflict-resolve';
 import generateTemplate from '../utils/generate-template';
-import { InitOptions, PKG } from "../types";
+import type { InitOptions, PKG } from "../types";
 import { PKG_NAME, PROJECT_TYPES } from "../utils/constants";
 
 let step = 0;
@@ -110,14 +110,11 @@ export default async (options: InitOptions) => {
         pkg = await conflictResolve(cwd, options.rewriteConfig);
         log.success(`Step ${step}. 已完成项目依赖和配置冲突检查处理 :D`);
 
+
         if (!disabledNpmInstall) {
             log.info(`Step ${++step}. 安装依赖`);
             const npm = await npmType;
-            spawn.sync(
-                npm,
-                ['i', '-D', PKG_NAME],
-                { stdio: 'inherit', cwd }
-            );
+            spawn.sync(npm, ['i', '-D', PKG_NAME], { stdio: 'inherit', cwd });
             log.success(`Step ${step}. 安装依赖成功 :D`);
         }
     }

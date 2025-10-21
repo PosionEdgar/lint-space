@@ -2,7 +2,7 @@ import fs from 'fs-extra';
 import path from 'path';
 import { doEslint, doPrettier, doStylelint, doMarkdownlint } from '../lints'
 
-import { Config, PKG, ScanOptions, ScanReport, ScanResult } from "../types";
+import type { Config, PKG, ScanOptions, ScanReport, ScanResult } from "../types";
 import { PKG_NAME } from '../utils/constants';
 
 export default async (options: ScanOptions): Promise<ScanReport> => {
@@ -26,8 +26,8 @@ export default async (options: ScanOptions): Promise<ScanReport> => {
     // eslint
     if (!config.enableESLint) {
         try {
-            const eslintResult = await doEslint({ ...options, pkg, config })
-            results = results.concat(eslintResult)
+            const eslintResults = await doEslint({ ...options, pkg, config })
+            results = results.concat(eslintResults)
         } catch (e) {
             runErrors.push(e)
         }

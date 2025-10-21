@@ -35,7 +35,7 @@ const installDepsIfThereNo = async () => {
     if (!fs.existsSync(nodeModulesPath) && lintConfigFiles.length > 0) {
         const npm = await npmType;
         log.info(`使用项目 Lint 配置，检测到项目未安装依赖，将进行安装（执行 ${npm} install）`);
-        execSync(`cd ${cwd} && ${npm} i`)
+        execSync(`cd ${cwd} && ${npm} i`);
     }
 }
 
@@ -51,12 +51,12 @@ program
     .action(async (cmd) => {
         if (cmd.vscode) {
             const configPath = path.resolve(cwd, `${PKG_NAME}.config.js`);
-            generateTemplate(cwd, require(configPath), true)
+            generateTemplate(cwd, require(configPath), true);
         } else {
             await init({
                 cwd,
-                checkVersionUpdate: true
-            })
+                checkVersionUpdate: true,
+            });
         }
     })
 
