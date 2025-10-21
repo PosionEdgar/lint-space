@@ -1,6 +1,6 @@
 {
   "name": "pe-stylelint-config",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "description": "印客学院 CSS规范",
   "main": "index.js",
   "keywords": [
