@@ -1,7 +1,7 @@
 {
   "name": "web-pe-lint",
-  "version": "1.0.18",
-  "description": "印客教育前端编码规范工程化标准脚手架",
+  "version": "1.0.9",
+  "description": "前端编码规范工程化脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
   "scripts": {
@@ -71,12 +71,13 @@
     "is-docker": "^2.1.1",
     "lodash": "^4.17.20",
     "markdownlint": "^0.25.1",
+    "markdownlint-config-encode": "^1.0.8",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
-    "pe-commitlint-config": "^1.0.17",
-    "pe-eslint-config": "^1.0.18",
-    "pe-markdownlint-config": "^1.0.17",
-    "pe-stylelint-config": "^1.0.17",
+    "pe-commitlint-config": "^1.0.3",
+    "pe-eslint-config": "^1.0.4",
+    "pe-markdownlint-config": "^1.0.3",
+    "pe-stylelint-config": "^1.0.3",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
@@ -85,15 +86,15 @@
     "text-table": "^0.2.0",
     "vue-eslint-parser": "^7.3.0"
   },
-  "author": "chenghuai",
-  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
+  "author": "PoisonEdgar",
+  "homepage": "https://github.com/PosionEdgar/lint-space#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+    "url": "git+https://github.com/PosionEdgar/lint-space.git"
   },
   "bugs": {
-    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+    "url": "https://github.com/PosionEdgar/lint-space/issues"
   },
-  "gitHead": "adea188161d1c6c31152c2d489ff7b064afe75ed"
+  "gitHead": "bef236d882bb62cda0b74b1dd48f20ccc71a96b5"
 }

@@ -1,10 +1,10 @@
-# encode-fe-eslint-config
+# pe-eslint-config
 
 > 印客学院 JavaScript TypeScript Node 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
 
-## JavaScript 项目 - encode-fe-eslint-config
+## JavaScript 项目 - pe-eslint-config
 
 针对未使用 `React` 或 `Vue` 的原生 `JavaScript` 项目，使用 `ESLint` 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 `parser`，是本包的默认配置。
 
@@ -17,18 +17,18 @@
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import
+npm i -D pe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config"]
+  "extends": ["pe-eslint-config"]
 }
 ```
 
-## JavaScript + React 项目 - encode-fe-eslint-config/react
+## JavaScript + React 项目 - pe-eslint-config/react
 
 针对 JS React 项目，继承了默认配置，并启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则。
 
@@ -44,14 +44,14 @@ npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
+npm i -D pe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-plugin-react eslint-plugin-react-hooks
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/react"]
+  "extends": ["pe-eslint-config/react"]
 }
 ```
 
@@ -63,11 +63,11 @@ npm i -D eslint-plugin-jsx-a11y
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/react", "encode-fe-eslint-config/jsx-a11y"]
+  "extends": ["pe-eslint-config/react", "pe-eslint-config/jsx-a11y"]
 }
 ```
 
-## JavaScript + Vue 项目 - encode-fe-eslint-config/vue
+## JavaScript + Vue 项目 - pe-eslint-config/vue
 
 针对 `JS Vue` 的项目，继承了默认配置，并启用了 [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) 插件的规则，使用 [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser) 作为 parser。
 
@@ -82,18 +82,18 @@ npm i -D eslint-plugin-jsx-a11y
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
+npm i -D pe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import vue-eslint-parser eslint-plugin-vue
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/vue"]
+  "extends": ["pe-eslint-config/vue"]
 }
 ```
 
-## JavaScript (Node.js) 项目 - encode-fe-eslint-config/node
+## JavaScript (Node.js) 项目 - pe-eslint-config/node
 
 针对 Node.js 项目，继承了默认配置和 [eslint-config-egg 的规则](https://github.com/eggjs/eslint-config-egg/blob/master/lib/rules/node.js)，规则由 ESLint 原生规则和 [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) 提供。
 
@@ -107,18 +107,18 @@ npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-config-egg
+npm i -D pe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-import eslint-config-egg
 ```
 
 ### 配置
 
 ```json
 {
-  "extends": ["encode-fe-eslint-config/node"]
+  "extends": ["pe-eslint-config/node"]
 }
 ```
 
-## TypeScript 项目 - encode-fe-eslint-config/typescript
+## TypeScript 项目 - pe-eslint-config/typescript
 
 针对未使用 `React` 或 `Vue` 的 `TypeScript` 项目，继承了默认配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
@@ -132,7 +132,7 @@ npm i -D encode-fe-eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 ### 安装
 
 ```shell
-npm i -D encode-fe-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
+npm i -D pe-eslint-config @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import eslint-import-resolver-typescript
 ```
 
 ### 配置

@@ -1,7 +1,7 @@
 {
   "name": "pe-eslint-plugin",
-  "version": "1.0.17",
-  "description": "印客教育自定义eslint插件",
+  "version": "1.0.3",
+  "description": "自定义eslint插件",
   "scripts": {
     "test": "jest",
     "prepublishOnly": "npm run test"
@@ -12,20 +12,19 @@
     "README.md"
   ],
   "keywords": [
-    "encode",
     "eslint",
     "eslint-plugin"
   ],
   "main": "src/index.js",
-  "author": "chenghuai",
-  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
+  "author": "PoisonEdgar",
   "license": "ISC",
+  "homepage": "https://github.com/PoisonEdgar/pe-eslint-plugin",
+  "bugs": {
+    "url": "https://github.com/PoisonEdgar/pe-eslint-plugin/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
-  },
-  "bugs": {
-    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
+    "url": "git+https://github.com/PoisonEdgar/pe-eslint-plugin.git"
   },
   "dependencies": {
     "fs-extra": "^9.0.1",
@@ -35,5 +34,5 @@
     "eslint": "^8.7.0",
     "jest": "^26.6.3"
   },
-  "gitHead": "adea188161d1c6c31152c2d489ff7b064afe75ed"
+  "gitHead": "6bb9a23f7771e0012418784b1e7c8d1209737486"
 }

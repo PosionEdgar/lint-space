@@ -18,6 +18,6 @@ npm install pe-markdownlint-config markdownlint --save-dev
 
 ```json
 {
-	"extends": "pe-markdownlint-config"
+  "extends": "pe-markdownlint-config"
 }
 ```
