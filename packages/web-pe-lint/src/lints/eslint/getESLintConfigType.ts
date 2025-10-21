@@ -15,19 +15,31 @@ export function getESLintConfigType(cwd: string, pkg: PKG): string {
   const reactFiles = glob.sync('./!(node_modules)/**/*.@(jsx|tsx)', { cwd });
   const vueFiles = glob.sync('./!(node_modules)/**/*.vue', { cwd });
   const dependencies = Object.keys(pkg.dependencies || {});
-  const language = tsFiles.length > 0 ? 'typescript' : '';
+  const devDependencies = Object.keys(pkg.devDependencies || {});
+  const allDependencies = [...dependencies, ...devDependencies];
+  
+  const language = tsFiles.length > 0 || allDependencies.some((name) => /^typescript(-|$)/.test(name)) ? 'typescript' : '';
   let dsl = '';
 
   // dsl判断
-  if (reactFiles.length > 0 || dependencies.some((name) => /^react(-|$)/.test(name))) {
+  if (reactFiles.length > 0 || allDependencies.some((name) => /^react(-|$)/.test(name))) {
     dsl = 'react';
-  } else if (vueFiles.length > 0 || dependencies.some((name) => /^vue(-|$)/.test(name))) {
+  } else if (vueFiles.length > 0 || allDependencies.some((name) => /^vue(-|$)/.test(name))) {
     dsl = 'vue';
-  } else if (dependencies.some((name) => /^rax(-|$)/.test(name))) {
+  } else if (allDependencies.some((name) => /^rax(-|$)/.test(name))) {
     dsl = 'rax';
   }
 
-  return (
-    'pe-eslint-config/' + `${language}/${dsl}`.replace(/\/$/, '/index').replace(/^\//, '')
-  );
+  // 构建配置路径
+  let configPath = 'pe-eslint-config';
+  if (language) {
+    configPath += `/${language}`;
+  }
+  if (dsl) {
+    configPath += `/${dsl}`;
+  } else if (language) {
+    configPath += '/index';
+  }
+
+  return configPath;
 }
