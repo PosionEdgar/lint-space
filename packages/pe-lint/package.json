@@ -1,6 +1,6 @@
 {
   "name": "web-pe-lint",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "前端编码规范工程化脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -75,7 +75,7 @@
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
     "pe-commitlint-config": "^1.0.3",
-    "pe-eslint-config": "^1.0.3",
+    "pe-eslint-config": "^1.0.4",
     "pe-markdownlint-config": "^1.0.3",
     "pe-stylelint-config": "^1.0.3",
     "prettier": "^2.2.1",
