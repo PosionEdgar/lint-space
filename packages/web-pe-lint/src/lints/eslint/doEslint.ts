@@ -12,6 +12,11 @@ export interface DoESLintOptions extends ScanOptions {
 }
 
 export async function doESLint(options: DoESLintOptions) {
+  console.log('[DEBUG] eslint module path:', require.resolve('eslint', { paths: [__dirname] }));
+  console.log('[DEBUG] eslint exports keys:', Object.keys(require('eslint')));
+  console.log('[DEBUG] eslint version:', require('eslint/package.json').version);
+  
+  
   let files: string[];
   if (options.files) {
     files = options.files.filter((name) => ESLINT_FILE_EXT.includes(extname(name)));
