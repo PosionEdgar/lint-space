@@ -47,29 +47,11 @@ export default (cwd: string, data: Record<string, any>, vscode?: boolean) => {
   const templates = glob.sync(`${vscode ? '_vscode' : '**'}/*.ejs`, { cwd: templatePath });
   for (const name of templates) {
     const filepath = path.resolve(cwd, name.replace(/\.ejs$/, '').replace(/^_/, '.'));
-    // 预计算 eslint 扩展配置的绝对路径，避免在 EJS 模板中直接使用 require
-    let eslintExtendResolved = '';
-    try {
-      const eslintType: string = data.eslintType || 'index';
-      const baseConfigName = 'pe-eslint-config';
-      const configEntry = eslintType === 'index' ? baseConfigName : `${baseConfigName}/${eslintType}`;
-      // 尝试从目标项目目录进行解析，保证以项目为基准解析依赖
-      // 当解析失败时，回退为包名字符串，保持最小可用
-      // @ts-ignore Node.js require.resolve 第二参数在运行时可用
-      eslintExtendResolved = require.resolve(configEntry, { paths: [cwd] });
-    } catch (e) {
-      // fallback: 仍返回包名，交由 ESLint 自己解析
-      const eslintType: string = data.eslintType || 'index';
-      const baseConfigName = 'pe-eslint-config';
-      eslintExtendResolved = eslintType === 'index' ? baseConfigName : `${baseConfigName}/${eslintType}`;
-    }
-
     let content = ejs.render(fs.readFileSync(path.resolve(templatePath, name), 'utf8'), {
       eslintIgnores: ESLINT_IGNORE_PATTERN,
       stylelintExt: STYLELINT_FILE_EXT,
       stylelintIgnores: STYLELINT_IGNORE_PATTERN,
       markdownLintIgnores: MARKDOWN_LINT_IGNORE_PATTERN,
-      eslintExtendResolved,
       ...data,
     });
 

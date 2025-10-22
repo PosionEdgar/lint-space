@@ -1,25 +1,24 @@
 {
   "name": "pe-markdownlint-config",
-  "version": "1.0.19",
+  "version": "1.0.0",
   "main": "index.json",
-  "description": "文档规范",
+  "description": "印客学院 文档规范",
   "keywords": [
     "encode",
     "markdown",
     "lint"
   ],
-  "author": "PosionEdgar",
-  "homepage": "https://github.com/PosionEdgar/lint-space",
+  "author": "chenghuai",
+  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PosionEdgar/lint-space.git"
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
   },
   "bugs": {
-    "url": "https://github.com/PosionEdgar/lint-space/issues"
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
   },
   "peerDependencies": {
     "markdownlint": "^0.28.1"
-  },
-  "gitHead": "6bb9a23f7771e0012418784b1e7c8d1209737486"
+  }
 }

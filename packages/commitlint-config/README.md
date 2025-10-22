@@ -1,6 +1,6 @@
-# `commitlint-config`
+# `pe-commitlint-config`
 
-> Git 规范
+> 印客学院 Git 规范
 
 支持配套的 [commitlint 配置](https://commitlint.js.org/#/concepts-shareable-config)，用于对 `git commit message` 进行校验。
 
@@ -18,7 +18,7 @@ npm install pe-commitlint-config @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['pe-commitlint-config'],
+	extends: ['pe-commitlint-config'],
 };
 ```
 

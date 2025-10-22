@@ -6,16 +6,17 @@ import { ESLINT_FILE_EXT, ESLINT_IGNORE_PATTERN } from '../../utils/constants';
 import { formatESLintResults } from './formatESLintResults';
 import { getESLintConfig } from './getESLintConfig';
 
+
 export interface DoESLintOptions extends ScanOptions {
   pkg: PKG;
   config?: Config;
 }
 
 export async function doESLint(options: DoESLintOptions) {
+
   console.log('[DEBUG] eslint module path:', require.resolve('eslint', { paths: [__dirname] }));
   console.log('[DEBUG] eslint exports keys:', Object.keys(require('eslint')));
   console.log('[DEBUG] eslint version:', require('eslint/package.json').version);
-  
   
   let files: string[];
   if (options.files) {

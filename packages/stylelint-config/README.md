@@ -1,4 +1,4 @@
-\*\*# pe-markdownlint-config
+# pe-markdownlint-config
 
 支持配套的 [stylelint 可共享配置](https://stylelint.io/user-guide/configure)。
 
@@ -19,5 +19,3 @@ npm install pe-stylelint-config stylelint stylelint-scss --save-dev
   "extends": "pe-stylelint-config"
 }
 ```
-
-\*\*

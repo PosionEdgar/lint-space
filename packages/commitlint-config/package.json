@@ -1,24 +1,24 @@
 {
   "name": "pe-commitlint-config",
-  "version": "1.0.19",
-  "description": "Git 规范",
+  "version": "1.0.20",
   "main": "index.js",
+  "description": "Git规范",
   "keywords": [
+    "encode",
     "commit",
     "lint"
   ],
-  "homepage": "https://github.com/PosionEdgar/lint-space#readme",
-  "bugs": {
-    "url": "https://github.com/PosionEdgar/lint-space/issues"
-  },
-  "author": "PosionEdgar",
+  "author": "chenghuai",
+  "homepage": "https://github.com/encode-studio-fe/fe-spec#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PosionEdgar/lint-space.git"
+    "url": "git+https://github.com/encode-studio-fe/fe-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/encode-studio-fe/fe-spec/issues"
   },
   "dependencies": {
     "conventional-changelog-conventionalcommits": "^4.5.0"
-  },
-  "gitHead": "6bb9a23f7771e0012418784b1e7c8d1209737486"
+  }
 }
