@@ -52,10 +52,10 @@
     "commander": "^6.2.1",
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
-    "encode-fe-commitlint-config": "^1.0.0",
-    "encode-fe-eslint-config": "^1.0.0",
-    "encode-fe-markdownlint-config": "^1.0.0",
-    "encode-fe-stylelint-config": "^1.0.0",
+    "pe-commitlint-config": "^1.0.27",
+    "pe-eslint-config": "^1.0.27",
+    "pe-markdownlint-config": "^1.0.27",
+    "pe-stylelint-config": "^1.0.27",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -94,5 +94,6 @@
   },
   "bugs": {
     "url": "https://github.com/encode-studio-fe/fe-spec/issues"
-  }
+  },
+  "gitHead": "a5b55f136f82e27487a53f90beaa23abac63cac3"
 }
