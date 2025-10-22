@@ -1,6 +1,6 @@
 {
   "name": "pe-commitlint-config",
-  "version": "1.0.20",
+  "version": "1.0.28",
   "main": "index.js",
   "description": "Git规范",
   "keywords": [
