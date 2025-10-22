@@ -1,6 +1,6 @@
 {
   "name": "web-pe-lint",
-  "version": "1.0.29",
+  "version": "1.1.0",
   "description": "印客教育前端编码规范工程化标准脚手架",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -38,7 +38,6 @@
     "copyfiles": "^2.4.1",
     "jest": "^27.5.1",
     "nyc": "^15.1.0",
-    
     "typescript": "^4.6.2"
   },
   "dependencies": {
@@ -74,10 +73,10 @@
     "markdownlint": "^0.25.1",
     "markdownlint-rule-helpers": "^0.13.0",
     "ora": "^5.1.0",
-    "pe-commitlint-config": "^1.0.29",
-    "pe-eslint-config": "^1.0.29",
-    "pe-stylelint-config": "^1.0.29",
-    "pe-markdownlint-config": "^1.0.29",
+    "pe-commitlint-config": "^1.1.0",
+    "pe-eslint-config": "^1.1.0",
+    "pe-markdownlint-config": "^1.1.0",
+    "pe-stylelint-config": "^1.1.0",
     "prettier": "^2.2.1",
     "strip-ansi": "^6.0.0",
     "stylelint": "^14.3.0",
