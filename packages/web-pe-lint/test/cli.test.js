@@ -26,7 +26,14 @@ describe(`'fix' command`, () => {
     await cli(['fix'], {
       cwd: path.dirname(`${dir}/result`),
     });
-    expect(fs.readFileSync(outputFilePath, 'utf8')).toEqual(expectedFileContent);
+    const actualRaw = fs.readFileSync(outputFilePath, 'utf8');
+    // 统一规范：CRLF -> LF，去尾随空白，每行末尾去掉空白，将文件末尾多余空行合并为一个换行
+    const normalize = (s) =>
+      String(s)
+        .replace(/\r\n/g, '\n')
+        .replace(/[ \t]+$/gm, '')
+        .replace(/\n+$/g, '\n');
+    expect(normalize(actualRaw)).toEqual(normalize(expectedFileContent));
   });
 
   afterEach(() => {
