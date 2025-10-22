@@ -1,14 +1,10 @@
+import { ESLint } from 'eslint';
 import fg from 'fast-glob';
 import { extname, join } from 'path';
 import { Config, PKG, ScanOptions } from '../../types';
 import { ESLINT_FILE_EXT, ESLINT_IGNORE_PATTERN } from '../../utils/constants';
 import { formatESLintResults } from './formatESLintResults';
 import { getESLintConfig } from './getESLintConfig';
-
-
-// 👇 强制从当前包解析 ESLint，防止引用到错误版本
-const eslintModule = require(require.resolve('eslint', { paths: [__dirname] }));
-const ESLint = eslintModule.ESLint || eslintModule.default?.ESLint || eslintModule.default;
 
 export interface DoESLintOptions extends ScanOptions {
   pkg: PKG;
